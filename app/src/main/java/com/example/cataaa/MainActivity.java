@@ -26,10 +26,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Get components
         ImageView iv = findViewById(R.id.imageView);
-
         Button b = findViewById(R.id.button);
-
         TextInputEditText tv = findViewById(R.id.textInput);
 
         // Declaring executor to parse the URL
@@ -46,9 +45,12 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     InputStream is;
                     String s = tv.getEditableText().toString();
+                    // if there is not text then get an image without text
                     if (s.equals("")){
                         is = (new URL(IMAGE_URL)).openStream();
-                    }else{
+                    }
+                    // otherwise get an image with text
+                    else{
                         is = (new URL(IMAGE_URL + "/says/" + s)).openStream();
                     }
                     Bitmap image = BitmapFactory.decodeStream(is);
