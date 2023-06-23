@@ -2,4 +2,5 @@
     <string name="app_name">cataaa</string>
     <string name="load_a_cat">Load a cat!</string>
     <string name="a_cat_image">a cat image</string>
+    <string name="enter_text_for_the_cat_to_say">Enter text for the cat to say!</string>
 </resources>
