@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">cataaa</string>
+    <string name="load_a_cat">Load a cat!</string>
+    <string name="a_cat_image">a cat image</string>
 </resources>
